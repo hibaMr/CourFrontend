@@ -1,0 +1,108 @@
+/* Form Styles */
+.form-container {
+    margin: 2rem;
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .form-title {
+    font-size: 2rem;
+    color: #2563eb;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  .form input {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  .btn {
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .save-btn {
+    background-color: #22c55e;
+  }
+  .supprimer-btn {
+    background-color: #c52263;
+  }
+  .editer-btn {
+    background-color: #2256c5;
+  }
+  .filtrer-btn {
+    background-color: #0b38a1;
+  }
+  .vider-btn {
+    background-color: #42454c;
+  }
+  .recherche-btn {
+    background-color: #fc5050;
+  }
+  
+  .display-btn {
+    background-color: #f97316;
+  }
+  
+  .modify-btn {
+    background-color: #f97316;
+    margin-right: 0.5rem;
+  }
+  
+  .delete-btn {
+    background-color: #ef4444;
+  }
+  
+  .delete-all-btn {
+    background-color: #7f1d1d;
+  }
+  
+  /* Table Styles */
+  .table-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  .table-title {
+    font-size: 2.5rem;
+    color: #2563eb;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  .student-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .student-table th,
+  .student-table td {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .student-table thead {
+    background-color: #e5e7eb;
+  }
+  
+  .student-table tr:hover {
+    background-color: #f3f4f6;
+  }
+  
+  
