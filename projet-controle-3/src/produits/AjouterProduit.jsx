@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 
-function AjouterProduit({produits,setProduits,produit,setProduit}){
+function AjouterProduit({produits,setProduits,produit,setProduit,quantite,setQuantite}){
 
 
     function Ajouter(){
@@ -15,7 +15,7 @@ function AjouterProduit({produits,setProduits,produit,setProduit}){
                 id:produits[produits.length - 1].id + 1
             })
         }else{
-            setProduits({
+            setProduit({
                 ...produit,
                 id:1
             })

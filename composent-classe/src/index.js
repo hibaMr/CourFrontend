@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import App from './composent-classe/App'
+import App from './pratique/App'
 import { BrowserRouter } from 'react-router-dom';
 
 let root = ReactDOM.createRoot(document.getElementById('root'));                         // hena jebna id dyale dik div li kayna fi index.html li west public

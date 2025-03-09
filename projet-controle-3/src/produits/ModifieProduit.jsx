@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
 
-function ModifieProduit({produits,setProduits,produit,setProduit}){
+function ModifieProduit({produits,setProduits,produit,setProduit,quantite,setQuantite}){
 
     const [objProduit,setObjProduit] = useState({
         id:produit.id,
@@ -25,7 +25,7 @@ function ModifieProduit({produits,setProduits,produit,setProduit}){
         })
         setProduits([..._produits])
     }
-    console.log(produit)
+
 
     return(
         <>

@@ -1,6 +1,15 @@
-function ListCommande({produits,setProduits,produit,setProduit,commande,setCommande,commandes,setCommandes}){
+import { Link } from "react-router-dom"
 
-console.log(commande)
+function ListCommande({produits,setProduits,produit,setProduit,commande,setCommande,commandes,setCommandes,quantite,setQuantite,comId}){
+        
+    function supprimer(id){
+        const _commandes = commandes.filter(function(item){
+            return item.id !== id
+        })
+        setCommandes([..._commandes])
+    }
+
+    
 
     return (
         <>
@@ -66,6 +75,7 @@ console.log(commande)
     </thead>
     <tbody class="bg-white divide-y divide-gray-200">
         {commandes.map(function(item,index){
+            
             return(
                 <>
                     <tr key={index}>
@@ -85,23 +95,25 @@ console.log(commande)
                             {item.tel}
                         </td>
                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                            {item.title}
+                            {item.produit.title}
                         </td>
                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                            {item.price}
+                            {item.produit.price}
                         </td>
                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                            {item.category}
+                            {item.produit.category}
                         </td>
                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                             {item.count}
                         </td>
                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                            {item.image}
+                        <img class="h-auto w-24" src= {item.produit.image}/>
                         </td>
                         <td class="px-6 py-4 whitespace-nowrap  text-sm font-medium">
-                            <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
-                            <a href="#" class="ml-2 text-red-600 hover:text-red-900">Delete</a>
+                            <Link to="/commande/modifierCommande">
+                                <a href="#" class="text-indigo-600 hover:text-indigo-900" onClick={()=>setCommande({...item})}>Edit</a>
+                            </Link>
+                            <a href="#" class="ml-2 text-red-600 hover:text-red-900" onClick={()=>supprimer(item.id)}>Delete</a>
                         </td>
                     </tr>
                 </>

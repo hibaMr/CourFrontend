@@ -11,7 +11,7 @@ function App(){
             <Menu/>
             <TestImmer/>
             <Routes>
-                <Route path="/facture" element={<Facture/>}/>
+                {/* <Route path="/facture" element={<Facture/>}/> */}
                 <Route path="/achats" element={<Achats/>}/>
                 <Route path="/achats/ajouter" element={<AjouterAchat/>}/>
             </Routes>

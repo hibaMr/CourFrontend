@@ -19,6 +19,9 @@ function Menu2(){
                             <Link to="/produit/ajouterProduit">
                             <a href="#_" class="mr-5 font-medium leading-6 text-gray-600 hover:text-gray-900">Ajouter produit</a>
                             </Link>
+                            <Link to="/client/listProduitClient">
+                            <a href="#_" class="mr-5 font-medium leading-6 text-gray-600 hover:text-gray-900">List Produit Client</a>
+                            </Link>
                             <Link to="/commande/listCommande">
                             <a href="#_" class="mr-5 font-medium leading-6 text-gray-600 hover:text-gray-900">List Commandes</a>
                             </Link>
